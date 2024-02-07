@@ -6,61 +6,70 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<link rel="stylesheet" href="styles.css" />
 		<title>Pricing Component with Toggle Master</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<header>
-			<h2 class="header__text">Our Pricing</h2>
+		<header class="header">
+			<h2 class="header__text t-centered">Our Pricing</h2>
 			<div class="section-with-toggle">
-        <p class="header-p">Annually</p>
+				<p class="header-p">Annually</p>
+
 				<div class="checkbox-with-toggle">
-					<input type="checkbox" id="check" class="toggle" />
-					<label for="check">Checked?</label>
+					<input type="checkbox" id="myToggle" class="toggle" />
+					<label for="myToggle"></label>
 				</div>
-        <p class="header-p">Monthly</p>
+
+				<p class="header-p">Monthly</p>
 			</div>
 		</header>
-    <main class="cards-container">
-      <div class="white-card flex centered">
-        <h4 class="plan-name">Basic</h4>
-        <h1 class="price"><span class="dollar">$</span>19.99</h1>
-        <br>
-        <p class="features">500 GB Storage</p>
-        <br>
-        <p class="features">2 Users Allowed</p>
-        <br>
-        <p class="features">Send up to 3 GB</p>
-        <br>
-        <button class="more">Learn More</button>
-      </div>
 
-      <div class="purple-card flex centered">
-        <h4 class="plan-name">Professional</h4>
-        <h1 class="price"><span class="dollar">$</span>24.99</h1>
-        <br>
-        <p class="features">1 TB Storage</p>
-        <br>
-        <p class="features">5 Users Allowed</p>
-        <br>
-        <p class="features">Send up to 10 GB</p>
-        <br>
-        <button class="more">Learn More</button>
-      </div>
+		<main class="cards-container flex">
+			<div class="white-card flex centered">
+				<h4 class="plan-name">Master</h4>
+				<h1 class="price"><span class="dollar">$</span>19.99</h1>
+				<br />
+				<p class="features">500 GB Storage</p>
+				<br />
+				<p class="features">2 Users Allowed</p>
+				<br />
+				<p class="features">Send up to 3 GB</p>
+				<br />
+				<button class="more">Learn More</button>
+			</div>
 
-      <div class="white-card flex centered">
-        <h4 class="plan-name">Basic</h4>
-        <h1 class="price"><span class="dollar">$</span>39.99</h1>
-        <br>
-        <p class="features">2 TB Storage</p>
-        <br>
-        <p class="features">10 Users Allowed</p>
-        <br>
-        <p class="features">Send up to 20 GB</p>
-        <br>
-        <button class="more">Learn More</button>
-      </div>
-      <!-- <div class="purple-card"></div>
+			<div class="purple-card flex centered">
+				<h4 class="plan-name">Professional</h4>
+				<h1 class="price"><span class="dollar">$</span>24.99</h1>
+				<br />
+				<p class="features">1 TB Storage</p>
+				<br />
+				<p class="features">5 Users Allowed</p>
+				<br />
+				<p class="features">Send up to 10 GB</p>
+				<br />
+				<button class="more">Learn More</button>
+			</div>
+
+			<div class="white-card flex centered">
+				<h4 class="plan-name">Basic</h4>
+				<h1 class="price"><span class="dollar">$</span>39.99</h1>
+				<br />
+				<p class="features">2 TB Storage</p>
+				<br />
+				<p class="features">10 Users Allowed</p>
+				<br />
+				<p class="features">Send up to 20 GB</p>
+				<br />
+				<button class="more">Learn More</button>
+			</div>
+			<!-- <div class="purple-card"></div>
       <div class="white-card"></div> -->
-    </main>
+		</main>
 
 		<!-- <main>
     <section>
