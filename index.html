@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="resets.css" />
 		<title>Pricing Component with Toggle Master</title>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,7 +17,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<h2 class="header__text t-centered">Our Pricing</h2>
+			<h2 class="header__h t-centered">Our Pricing</h2>
 			<div class="section-with-toggle">
 				<p class="header-p">Annually</p>
 
@@ -29,43 +31,43 @@
 		</header>
 
 		<main class="cards-container flex">
-			<div class="white-card flex centered">
-				<h4 class="plan-name">Master</h4>
+			<div class="white-card card flex centered">
+				<h4 class="plan-name">Basic</h4>
 				<h1 class="price"><span class="dollar">$</span>19.99</h1>
-				<br />
+				<div class="divider"></div>
 				<p class="features">500 GB Storage</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">2 Users Allowed</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">Send up to 3 GB</p>
-				<br />
-				<button class="more">Learn More</button>
+				<div class="divider"></div>
+				<button class="button-purple more">Learn More</button>
 			</div>
 
-			<div class="purple-card flex centered">
+			<div class="purple-card card flex centered">
 				<h4 class="plan-name">Professional</h4>
 				<h1 class="price"><span class="dollar">$</span>24.99</h1>
-				<br />
+				<div class="divider"></div>
 				<p class="features">1 TB Storage</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">5 Users Allowed</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">Send up to 10 GB</p>
-				<br />
-				<button class="more">Learn More</button>
+				<div class="divider"></div>
+				<button class="button-white more">Learn More</button>
 			</div>
 
-			<div class="white-card flex centered">
-				<h4 class="plan-name">Basic</h4>
+			<div class="white-card card flex centered">
+				<h4 class="plan-name">Master</h4>
 				<h1 class="price"><span class="dollar">$</span>39.99</h1>
-				<br />
+				<div class="divider"></div>
 				<p class="features">2 TB Storage</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">10 Users Allowed</p>
-				<br />
+				<div class="divider"></div>
 				<p class="features">Send up to 20 GB</p>
-				<br />
-				<button class="more">Learn More</button>
+				<div class="divider"></div>
+				<button class="button-purple more">Learn More</button>
 			</div>
 			<!-- <div class="purple-card"></div>
       <div class="white-card"></div> -->
