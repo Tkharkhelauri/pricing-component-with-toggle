@@ -70,5 +70,26 @@
 				<button class="button-purple more">Learn More</button>
 			</div>
 		</main>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const toggleBtn = document.getElementById('myToggle')
+				const prices = document.querySelectorAll('.price')
+
+				const annuallyPrices = ['19.99', '24.99', '39.99']
+				const monthlyPrices = ['199.99', '249.99', '399.99']
+
+				const updatePrice = (price, index) =>
+					(prices[index].innerHTML = `<span class="dollar">$</span>${price}`)
+
+				toggleBtn.addEventListener('change', event =>
+					event.target.checked
+						? annuallyPrices.forEach(updatePrice)
+						: monthlyPrices.forEach(updatePrice),
+				)
+
+				toggleBtn.dispatchEvent(new Event('change'))
+			})
+		</script>
 	</body>
 </html>
